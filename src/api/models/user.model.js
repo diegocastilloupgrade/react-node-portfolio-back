@@ -8,6 +8,7 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema({
   email: { type: String, trim: true, required: true },
   password: { type: String, trim: true, required: true },
+  alias: { type: String, trim: true, required: true },
 });
 
 //Userschema ants de guardar hace una funcion que antes de guardar la contraseña la encripte.

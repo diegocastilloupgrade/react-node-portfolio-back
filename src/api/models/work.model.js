@@ -10,7 +10,7 @@ const WorkSchema  = new Schema (
        date: {type: String,required: false},
        img: {type: String,required: false},
        disciplina: {type: String,required: false},
-       tecnologia: {type: String,required: false},
+       tecnologia: {type: Array,required: false},
        company: {type: String,required: false},
     },
     {timestamps: true}

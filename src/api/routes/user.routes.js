@@ -11,7 +11,7 @@ const {
 //Cuando me meta en /users, que me ejecute la función getAllUsers
 router.get("/", getAllUsers);
 //Cuando me meta en /register, me ejecuta la función register
-router.post("/register", register);
+router.post("/registeruser", register);
 //Cuando me meta en /login, me ejecuta la función login
 router.post("/login", login);
 

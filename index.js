@@ -8,6 +8,7 @@ const server = express();
 
 const userRoutes = require("./src/api/routes/user.routes");
 const workRoutes = require("./src/api/routes/work.routes");
+const contactRoutes = require("./src/api/routes/contact.routes"); 
 
 //ME IMPORTO LA FUNCION CONNECT Y LA EJECUTAMOS
 const { connect } = require("./src/utils/database");
@@ -41,6 +42,7 @@ server.use(
 //USAMOS LOS ROUTES
 server.use("/works", workRoutes);
 server.use("/users", userRoutes);
+server.use("/contact", contactRoutes);
 
 const PORT = process.env.PORT || 8000;
 

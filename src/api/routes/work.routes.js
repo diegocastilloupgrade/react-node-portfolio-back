@@ -11,6 +11,6 @@ const {
 router.get("/", getAllWorks);
 router.get("/id/:id", getWorkByID);
 router.get("/name/:nombre_proyecto", getWorkByName);
-router.post("/newwork", [isAuth], createWork);
+router.post("/addwork", [isAuth], createWork);
 
 module.exports = router;
